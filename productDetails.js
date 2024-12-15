@@ -10,11 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             <div class="col-md-6">
                 <h1 class="product-details-title">${productDetails.title}</h1>
-                <p class="product-details-price">${productDetails.price}</p>
+                <p class="product-details-price">${'$' + productDetails.price}</p>
                 <p class="product-details-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae augue sit amet elit luctus ultrices.
+                    ${productDetails.description}
                 </p>
-                <p>Available Stock: ${productDetails.counter}</p>
+                <p>Available Stock: ${productDetails.count}</p>
+                <p>Seller name: ${productDetails.sellername}</p>
                 <button class="btn btn-add-to-cart">Add to Cart</button>
             </div>
         `;
