@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const productSection = document.querySelector('.row');
     const sellerId = 1;
 
-    function displayProductsBySeller(sellerId, category = 'all') {
+    function displayProductsBySeller(sellerId) {
         productSection.innerHTML = '';
 
         storedProducts.forEach(product => {
-            if (product.sellerid === sellerId && (category === 'all' || product.category === category)) {
+            if (product.sellerid === sellerId) {
                 const productHTML = `
                     <div class="col-12 col-md-4 col-lg-3 mb-5 product-item" data-category="${product.category}" data-seller="${product.sellerid}" data-id="${product.id}">
                         <img src="${product.image}" class="img-fluid product-thumbnail" alt="${product.title}">
@@ -76,35 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     displayProductsBySeller(sellerId);
 
-    const tabs = document.querySelectorAll('.tabs .item');
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-            tabs.forEach(tab => tab.classList.remove('active')); 
-            tab.classList.add('active');
-            
-            const category = tab.getAttribute('rel'); 
-            if (tab.classList.contains('active')) {
-                if (category === 'all') {
-                    displayProductsBySeller(sellerId, 'all');
-                } else {
-                    if (tab.classList.contains('filtered')) {
-                        displayProductsBySeller(sellerId, 'all');
-                        tab.classList.remove('filtered');
-                        tabs.forEach(t => t.classList.remove('active'));
-                    } else {
-                        displayProductsBySeller(sellerId, category);
-                        tab.classList.add('filtered');
-                    }
-                }
-            }
-        });
-    });
-
     document.querySelectorAll('.product-item').forEach(item => {
         item.addEventListener('click', function () {
             const productId = this.querySelector('.product-title').textContent;
             localStorage.setItem('selectedProduct', productId);
-            window.location.href = 'productDetails.html';
+            window.location.href = 'productDetailsSeller.html';
         });
     });
+    
 });

@@ -8,20 +8,21 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/cartStyle.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../js/cartScript.js"></script>
     <script>
       $(document).ready(function () {
-        const cartItems =
-          JSON.parse(localStorage.getItem(`cart_${userId}`)) || [];
-        const tbody = $("#order-items"); // Select the table body
-        let subtotal = 0;
+        let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
+        const cartKey = `cart_${userId}`;
+        let cartItems = allCarts[cartKey] || [];
         if (cartItems.length === 0) {
           window.location.href = "cart.html";
           return;
         }
+        const tbody = $("#order-items"); // Select the table body
+        let subtotal = 0;
         cartItems.forEach((item) => {
           const discountedPrice =
             item.discount > 0
@@ -44,6 +45,7 @@
       </tr>
     `);
         });
+
         tbody.append(`
     <tr>
       <td><strong>Cart Subtotal</strong></td>
