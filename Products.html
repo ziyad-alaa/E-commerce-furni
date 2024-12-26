@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="/css/Products.css" rel="stylesheet">
+    <link href="../css/Products.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
         <div class="container">
@@ -28,32 +29,73 @@
                     <li><a class="nav-link" href="blog.html">Blog</a></li>
                     <li><a class="nav-link" href="contact.html">Contact us</a></li>
                 </ul>
-                <input type="text" class="" id="searchInput" placeholder="Search products..." />
+                <div class="search-bar">
+                    <input type="text" id="search" placeholder="Search ..." class="form-control">
+                </div>
                 <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                    <li><a class="nav-link" href="#"><img src="/images/user.svg" alt="User"></a></li>
-                    <li><a class="nav-link" href="cart.html"><img src="/images/cart.svg" alt="Cart"></a></li>
+                    <li><a class="nav-link" href="#"><img src="../images/user.svg" alt="User"></a></li>
+                    <li><a class="nav-link" href="cart.html"><img src="../images/cart.svg" alt="Cart"></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <div class="slider-product our-new-product">
-        <ul class="tabs">
-            <li class="item" rel="tables">Tables</li>
-            <li class="item" rel="chairs">Chairs</li>
-            <li class="item" rel="lights">Lights</li>
-            <li class="item" rel="sofas">Sofas</li>
-            <li class="item" rel="accessories">Accessories</li>
-        </ul>
+
+    <div class="fcontainer">
+        <div class="filter-section">
+            <h2>Filter Products</h2>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <label><input type="radio" name="price" data-price="high-to-low"> High to Low</label>
+                <label><input type="radio" name="price" data-price="low-to-high"> Low to High</label>
+                <label><input type="radio" name="price" data-price="less-than-100"> Less than $100</label>
+                <label><input type="radio" name="price" data-price="less-than-200"> Less than $200</label>
+            </div>
+            <div class="filter-group">
+                <h3>Color</h3>
+                <label><input type="checkbox" class="color-checkbox" data-color="black"> Black</label>
+                <label><input type="checkbox" class="color-checkbox" data-color="green"> Green</label>
+                <label><input type="checkbox" class="color-checkbox" data-color="white"> White</label>
+                <label><input type="checkbox" class="color-checkbox" data-color="grey"> Grey</label>
+                <label><input type="checkbox" class="color-checkbox" data-color="brown"> Brown</label>
+            </div>
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <label><input type="checkbox" class="category-checkbox" data-category="chairs"> Chairs</label>
+                <label><input type="checkbox" class="category-checkbox" data-category="tables"> Tables</label>
+                <label><input type="checkbox" class="category-checkbox" data-category="sofas"> Sofas</label>
+                <label><input type="checkbox" class="category-checkbox" data-category="accessories"> Accessories</label>
+                <label><input type="checkbox" class="category-checkbox" data-category="lights"> Lights</label>
+            </div>
+
+        </div>
+
         <div class="product-section">
             <div class="container">
+                <div id="no-products-message" style="display: none; text-align: center; margin-top: 20px;">
+                    <h2>No products found matching your filters.</h2> 
+                    </div>
                 <div class="row">
                 </div>
             </div>
+            <div id="notification" class="notification">
+                <img src="../images/cart.svg" alt="Cart Logo" class="cart-logo">
+                <span id="notification-text"></span>
+            </div>
         </div>
+    </div>
 
-        <script src="/js/bootstrap.js"></script>
-        <script src="/js/jq-3-7-1.js"></script>
-        <script src="/js/Products.js"></script>
-    </body>
+    <div id="NoMoreProducts" class="popup">
+        <div class="popup-content">
+            <h4>No more items available for this product !</h4>
+            <button id="ok" class="btn btn-secondary">OK</button>
+        </div>
+    </div>
+
+
+    
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jq-3-7-1.js"></script>
+    <script src="../js/Products.js"></script>
+</body>
+
 </html>

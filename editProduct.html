@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/Products.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/Products.css" rel="stylesheet">
     <title>Edit Product</title>
 </head>
 <body>
@@ -31,11 +31,15 @@
             </div>
             <div class="mb-3">
                 <label for="productImage" class="form-label">Product Image URL</label>
-                <input type="url" class="form-control" id="productImage" required>
+                <input type="text" class="form-control" id="productImage" required>
             </div>
             <div class="mb-3">
                 <label for="productPrice" class="form-label">Price</label>
                 <input type="number" class="form-control" id="productPrice" required>
+            </div>
+            <div class="mb-3">
+                <label for="productColor" class="form-label">Color</label>
+                <input type="text" class="form-control" id="productColor" required>
             </div>
             <div class="mb-3">
                 <label for="productQuantity" class="form-label">Quantity</label>
@@ -44,6 +48,12 @@
             <button type="submit" class="btn btn-success">Save Changes</button>
         </form>
     </div>
-    <script src="/js/editProduct.js"></script>
+    <div id="NotValidImg" class="popup">
+        <div class="popup-content">
+            <h4>Please enter a valid image URL ending with .png, .jpg, or .jpeg !</h4>
+            <button id="ok" class="btn btn-secondary">OK</button>
+        </div>
+    </div>
+    <script src="../js/editProduct.js"></script>
 </body>
 </html>

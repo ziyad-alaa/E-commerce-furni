@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'pending'
+            status: 'pending',
+            color: 'white'
         },
         {
             id: 2,
@@ -23,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
             price: 90.00,
             costPrice: 70.00,
             description: 'Classic design dining chair, perfect for any traditional dining room.',
-            count: 20,
+            count: 0,
             sold: 0,
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'white'
+
         },
         {
             id: 3,
@@ -43,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'green'
         },
         {
             id: 4,
@@ -58,7 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'pending'
+            status: 'pending',
+            color: 'white'
+
         },
         {
             id: 5,
@@ -73,7 +79,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'black'
+
         },
         {
             id: 6,
@@ -88,7 +96,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'black'
         },
         {
             id: 7,
@@ -103,7 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'pending'
+            status: 'pending',
+            color: 'white'
+
         },
         {
             id: 8,
@@ -118,7 +129,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'white'
+
         },
         {
             id: 9,
@@ -133,7 +146,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'brown'
+
         },
         {
             id: 10,
@@ -148,7 +163,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'pending'
+            status: 'pending',
+            color: 'black'
+
         },
         {
             id: 11,
@@ -163,7 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'black'
         },
         {
             id: 12,
@@ -178,7 +196,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'white'
+
         },
         {
             id: 13,
@@ -193,7 +213,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'pending'
+            status: 'pending',
+            color: 'brown'
         },
         {
             id: 14,
@@ -208,7 +229,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'green'
         },
         {
             id: 15,
@@ -223,7 +245,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'green'
         },
         {
             id: 16,
@@ -238,7 +261,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'pending'
+            status: 'pending',
+            color: 'green'
         },
         {
             id: 17,
@@ -253,7 +277,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'white'
+
         },
         {
             id: 18,
@@ -268,7 +294,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'black'
         },
         {
             id: 19,
@@ -283,7 +310,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 2,
             sellername: 'Abdulrahman',
-            status: 'pending'
+            status: 'pending',
+            color: 'grey'
+
         },
         {
             id: 20,
@@ -298,7 +327,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'grey'
         },
         {
             id: 21,
@@ -313,7 +343,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'white'
+
         },
         {
             id: 22,
@@ -328,7 +360,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'pending'
+            status: 'pending',
+            color: 'grey'
         },
         {
             id: 23,
@@ -343,7 +376,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'purple'
         },
         {
             id: 24,
@@ -358,7 +392,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'brown'
         },
         {
             id: 25,
@@ -373,7 +408,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'pending'
+            status: 'pending',
+            color: 'brown'
         },
         {
             id: 26,
@@ -388,7 +424,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'grey'
         },
         {
             id: 27,
@@ -403,7 +440,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'white'
+
         },
         {
             id: 28,
@@ -418,7 +457,9 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'pending'
+            status: 'pending',
+            color: 'white'
+
         },
         {
             id: 29,
@@ -433,7 +474,8 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'ordered'
+            status: 'ordered',
+            color: 'black'
         },
         {
             id: 30,
@@ -448,83 +490,178 @@ document.addEventListener('DOMContentLoaded', function () {
             discount: 0,
             sellerid: 1,
             sellername: 'Ahmed',
-            status: 'delivered'
+            status: 'delivered',
+            color: 'black'
         }
     ];
-
-
-
     if (!localStorage.getItem('products')) {
         localStorage.setItem('products', JSON.stringify(products));
     }
-
     const productSection = document.querySelector('.row');
-    const tabs = document.querySelectorAll('.tabs .item');
-    const searchInput = document.getElementById('searchInput');
+    let selectedProductId = null;
 
-    function loadProducts(category = "all", searchQuery = "") {
-        const storedProducts = JSON.parse(localStorage.getItem('products'));
+    function loadProducts(filteredProducts = null) {
+        const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
         productSection.innerHTML = '';
+        const productsToDisplay = filteredProducts !== null ? filteredProducts : storedProducts;
+        if (productsToDisplay.length === 0) {
+            noProducts(true);
+            return;
+        }
+        else
+            noProducts(false);
 
-        storedProducts.forEach(product => {
-            if ((category === "all" || product.category === category) &&
-                (product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                    product.description.toLowerCase().includes(searchQuery.toLowerCase()))) {
-                const productHTML = `
-                    <div class="col-12 col-md-4 col-lg-3 mb-5 product-item" data-category="${product.category}">
-                        <img src="${product.image}" class="img-fluid product-thumbnail">
+        productsToDisplay.forEach(product => {
+            const soldOutBadge = product.count === 0 ? '<span class="sold-out-badge">Sold Out</span>' : ''
+
+            const productHTML = `
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 product-item ${product.count===0 ?'sold-out' : '' } "
+                    data-category="${product.category}">
+                        <img src="${product.image}" class="img-fluid product-thumbnail">${soldOutBadge}
                         <h3 class="product-title">${product.title}</h3>
                         <strong class="product-price">${'$' + product.price}</strong>
-                        <span class="icon-cross">
+                        <button class="icon-cross" data-id="${product.id}">
                             <img src="../images/cross.svg" class="img-fluid">
-                        </span>
+                        </button>
                     </div>
                 `;
-                productSection.insertAdjacentHTML('beforeend', productHTML);
-            }
-        });
+            productSection.insertAdjacentHTML('beforeend', productHTML);
 
-        document.querySelectorAll('.product-item').forEach(item => {
-            item.addEventListener('click', function () {
-                const productId = this.querySelector('.product-title').textContent;
-                localStorage.setItem('selectedProduct', productId);
-                window.location.href = 'productDetails.html';
-            });
         });
+        filterEvents();/////////
+        productEvents();//////////
+        function noProducts(s) {
+            const message = document.getElementById('no-products-message');
+            if (s)
+                message.style.display = 'block';
+            else
+                message.style.display = 'none';
+        }
+
+        function filterProducts() {
+            // const storedProducts = JSON.parse(localStorage.getItem('products')) || [];/////////
+            const price = document.querySelector('input[name="price"]:checked')?.dataset.price;
+            const color = Array.from(document.querySelectorAll('.color-checkbox:checked')).map(c => c.dataset.color);
+            const category = Array.from(document.querySelectorAll('.category-checkbox:checked')).map(c => c.dataset.category);
+            let filteredProducts = [...storedProducts];////////
+            if (price) {
+                if (price === 'high-to-low')
+                    filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
+                else if (price === 'low-to-high')
+                    filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
+                else if (price === 'less-than-100')
+                    filteredProducts = filteredProducts.filter(p => p.price < 100);
+                else if (price === 'less-than-200')
+                    filteredProducts = filteredProducts.filter(p => p.price < 200);
+            }
+            if (color.length > 0) {
+                filteredProducts = filteredProducts.filter(p => color.includes(p.color));
+            }
+            if (category.length > 0) {
+                filteredProducts = filteredProducts.filter(c => category.includes(c.category));
+            }
+            const searchQuery = document.getElementById('search')?.value.toLowerCase();
+            if (searchQuery) {
+                filteredProducts = filteredProducts.filter(p => p.title.toLowerCase().includes(searchQuery));
+            }
+            loadProducts(filteredProducts);
+
+        }
+        function filterEvents() {
+            document.querySelectorAll('input[type="radio"][name="price"]').forEach(r => {
+                r.removeEventListener('change', filterProducts);
+                r.addEventListener('change', filterProducts);
+            });
+
+            document.querySelectorAll('.color-checkbox, .category-checkbox').forEach(c => {
+                c.removeEventListener('change', filterProducts);
+                c.addEventListener('change', filterProducts);
+            });
+            const searchInput = document.getElementById('search');
+            if (searchInput) { 
+                searchInput.removeEventListener('input', filterProducts);
+                searchInput.addEventListener('input', filterProducts);
+            }
+        }
+        // document.querySelectorAll('input[type="radio"][name="price"]').forEach(r => {
+        //     r.addEventListener('change', filterProducts);
+        // });
+        // document.querySelectorAll('.color-checkbox, .category-checkbox').forEach(c => {
+        //     c.addEventListener('change', filterProducts);
+        // });
+
+        function productEvents() {
+            document.querySelectorAll('.icon-cross').forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    selectedProductId = productId;
+                    addToCart(selectedProductId, userId);
+                });
+            });
+
+
+            document.querySelectorAll('.product-item').forEach(item => {
+                item.addEventListener('click', function () {
+                    productId = this.querySelector('.product-title').textContent;
+                    localStorage.setItem('selectedProduct', productId);
+                    window.location.href = 'productDetails.html';
+                });
+            });
+        }
+    }
+    loadProducts();
+    const userId = "user12";
+    if (!localStorage.getItem("cart")) {
+        localStorage.setItem("cart", JSON.stringify({}));
     }
 
-    loadProducts();
+    function addToCart(productId, userId) {
+        const products = JSON.parse(localStorage.getItem("products")) || [];
+        const cartData = JSON.parse(localStorage.getItem("cart")) || {};
+        const cartKey = `cart_${userId}`;
+        const product = products.find((product) => product.id === productId);
 
-    searchInput.addEventListener('input', function () {
-        const searchQuery = searchInput.value.trim();
-        loadProducts('all', searchQuery);
-    });
+        if (!cartData[cartKey]) {
+            cartData[cartKey] = [{ ...product, quantity: 1 }];
+            localStorage.setItem("cart", JSON.stringify(cartData));
+            return;
+        }
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-            const category = this.getAttribute('rel');
-            tabs.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-            if (this.classList.contains('active')) {
-                if (category === 'all') {
-                    loadProducts('all');
-                } else {
-                    if (this.classList.contains('filtered')) {
-                        loadProducts();
-                        this.classList.remove('filtered');
-                        tabs.forEach(t => t.classList.remove('active'));
-                    } else {
-                        loadProducts(category);
-                        this.classList.add('filtered');
-                    }
-                }
+        let existingProduct = cartData[cartKey].find(
+            (item) => item.id === productId
+        );
+        if (existingProduct) {
+            if (existingProduct.quantity < product.count)
+            existingProduct.quantity += 1;
+            else{
+                const NoMoreProducts = document.getElementById('NoMoreProducts');
+                NoMoreProducts.style.display = 'flex';
+                document.getElementById('ok').addEventListener('click', function () {
+                    NoMoreProducts.style.display = 'none';
+                });
+                return;
             }
-        });
-    });
+        } else {
+            cartData[cartKey].push({ ...product, quantity: 1 });
+        }
+        localStorage.setItem("cart", JSON.stringify(cartData));
+        showNotification();
+    }
 
     window.addEventListener('storage', function (e) {
         if (e.key === 'products') {
             loadProducts();
         }
     });
+    function showNotification() {
+        const notification = document.getElementById('notification');
+        const notificationText = document.getElementById('notification-text');
+        notificationText.textContent = 'Product added to cart!';
+        notification.style.display = 'flex';
+        notification.classList.remove('fade-out');
+        setTimeout(() => {
+            notification.classList.add('fade-out');
+        }, 3000);
+    }
 });
